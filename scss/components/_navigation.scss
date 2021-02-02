@@ -1,0 +1,241 @@
+//VARIABLES
+$color-primary: #0679bc;
+$color-secondary: #febf1c;
+$color-tertiary: #e64444;
+$color-light: rgb(226, 224, 224);
+$color-dark: #000;
+$color-white: #fff;
+//Bootsrap variables changes
+$primary: #0679bc;
+$secondary: #febf1c;
+$light: rgb(226, 224, 224);
+@import "../boot_scss/bootstrap.scss";
+
+// MAIN STYLES
+
+* {
+    box-sizing: border-box;
+    overflow-x: hidden;    
+}
+
+//fonts
+
+body {
+    color: $color-white;
+}
+
+//hide overflows
+
+.landing-page {
+    h1,
+    h3 {
+        overflow: hidden;
+    }
+}
+
+//headers
+
+.section-header {
+    padding: 40px 20px 0px;
+    margin-bottom: 20px;
+    border-bottom: $color-white 15px solid;
+    display: inline-block;
+}
+
+//text image cards
+
+.text-image-card {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+.text-image-card p,
+.text-image-card div{
+    flex: 1 400px;    
+    padding: 20px;
+}
+
+.text-image-card div img{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+//buttons 
+
+.landing-section-button button {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+
+//!!!!!!!!!!!!! 
+
+// LANDING PAGE
+
+//!!!!!!!!!!!!!
+
+
+//nav bar
+
+.navbar {
+    border-bottom: 20px solid $color-light;
+    padding: 30px 5%;
+    font-size: 1.2em;
+}
+
+.navbar-toggler {
+    margin: 5px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+//hero section
+
+.hero-section {    
+    background-color: $color-light;
+    background-image: url(../../images/landing/volunteers-cleaning-the-beach-9DXZHHZ.jpg);
+    background-repeat: none;
+    background-size: cover;
+    height: 100vh;   
+    padding: 0 5%;    
+}
+
+.hero-section h1 {
+    margin-bottom: 0;
+}
+
+.hero-section button {
+    padding: 10px 25px;
+    margin-top: 20px;
+}
+
+//landing main
+
+//landing quote
+
+.landing-quote {
+    background-color: $color-light;    
+    padding: 60px 10%;
+}
+
+.landing-quote h3 {
+    color: $color-dark;
+}
+
+//plan estrategico
+
+.landing-plan {
+    background-color: $color-secondary;
+    padding: 20px 2%;            
+}
+
+.landing-plan h1,
+.landing-plan p {
+    color: $color-dark;
+}
+
+.landing-plan h1 {
+    border-bottom: $color-dark 15px solid;
+}
+
+.landing-section-button {
+    width: 90%;
+    margin: auto;
+    padding: 0 20px;
+}
+
+//como ayudar
+
+.landing-como-ayudar {
+    background-color: $color-primary;
+    padding: 20px 2%;        
+}
+
+.landing-como-ayudar p {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.lightbox-container {
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+}
+
+.lightbox {
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
+    background-color: $color-light;
+    border-radius: 5px;
+}
+
+#carouselExampleCaptions {
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+
+//Quienes somos
+
+.landing-quienes {
+    background-color: $color-light;
+    padding: 20px 2%;    
+}
+
+.landing-quienes .white-separation-line {
+    background-color: $color-dark;
+}
+
+.landing-quienes h1,
+.landing-quienes p {
+    color: $color-dark;
+}
+
+.landing-quienes h1 {
+    border-bottom: $color-dark 15px solid;
+}
+
+.landing-quienes p {    
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+//landing form 
+
+.landing-form {
+    max-width: 60%;
+    margin: auto;
+    form {
+        color: $color-dark;
+        input {
+            max-width: 90%;
+            margin: 5px;
+        }
+    }
+    
+}
+
+///////////////////////////////////////////////////////////////////////////
+.quienes {
+    transform: translateX(-100vw);
+}
+
+.hide {
+    display: none;   
+}
+
+.show {
+    transform: translateX(0);
+}
+

@@ -3,9 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Plan Unidos Por Ecuador</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;0,800;0,900;1,400;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+
+    <!-- NAV BAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Plan Unidos Por Ecuador</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">              
+              <a class="nav-link" href="#" onclick="quienesSomosFunc()">Quienes Somos</a>
+              <a class="nav-link" href="#">Plan Estratégico</a>
+              <a class="nav-link" href="#">Como Ayudar</a>
+              <a class="nav-link" href="#" tabindex="-1">Contacto</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <!-- LANDING PAGE  -->
+
+    <div class="landing-page">
+        <div class="hero-section flex-column d-flex align-items-center justify-content-center"> 
+            <h1 class="display-1 align-self-start">En la unión <br>está la <span>FUERZA</span></h1>
+            <h2 class="align-self-start">Trabajamos por el desarrollo <br> integral del Ecuador.</h1>    
+            <button type="button" class="shadow btn btn-primary btn-lg align-self-start">YO ME UNO!</button>        
+        </div>
+        <div class="landing-main">
+            <div class="landing-quote">
+                <h3 class="align-self-center">“Tener fe no quiere decir que no tengamos dificultades en la vida, 
+                    sino que somos capaces de afrontarlas sabiendo que no estamos solos.”
+                    <br>Papa Francisco</h3>
+            </div>
+            <div class="landing-plan">
+                <div class='size-container'>
+                    <h1 class="section-header">PLAN ESTRATEGICO</h1>                    
+                    <div class="text-image-card">
+                        <p class="fs-4">Buscamos promover el desarrollo integral de sectores vulnerables del país. 
+                            Nos centramos en tres áreas: salud, construcción y desarrollo psicosocial.  
+                            Hemos escogido dos zonas vulnerbales del país, una en Durán y la otra en Quito. 
+                            En un futuro replicaremos esta obra en otras zonas, en función a sus necesidades.</p>
+                        <div>
+                            <img class="shadow" src="/images/landing/volunteers-cleaning-the-beach-9DXZHHZ.jpg" alt=""> 
+                        </div>                   
+                    </div>
+                    <div class="landing-section-button">
+                        <button type="button" class="shadow btn btn-primary btn-lg align-self-start">CONOCER MÁS!</button>
+                    </div>
+                </div>
+                                
+            </div>
+            <div class="landing-como-ayudar">  
+                <div class='size-container'>
+                    <h1 class="section-header">COMO AYUDAR</h1>                    
+                    <p class="fs-4">Un voluntario es todo aquel que coopere de una u otra manera con este plan. 
+                        <br>
+                        <br>VOLUNTARIO ACTIVO: Si vives en Quito o en Guayaquil, puedes acompañarnos a las visitas a estas zonas vulberables. 
+                        <br>
+                        <br>VOLUNTARIO DONATE: Puedes contribuir de manera económica o donando bienes de primera necesidad (alimentos, ropa, medicinas, libros, etc) 
+                    </p>
+                    <div class="lightbox-container">
+                        <div class="lightbox shadow">
+                            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">                
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/landing/breakfast-in-a-bed-NW4ZM3R.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">                          
+                                    <p>Texto descriptivo de donde es la foto o quienes son.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/landing/purple-flowers-in-blue-glass-vase-on-stylish-bedsi-VAB3F94.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">                          
+                                    <p>Texto descriptivo de donde es la foto o quienes son.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/landing/breakfast-in-a-bed-NW4ZM3R.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">                          
+                                    <p>Texto descriptivo de donde es la foto o quienes son.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/landing/purple-flowers-in-blue-glass-vase-on-stylish-bedsi-VAB3F94.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">                          
+                                    <p>Texto descriptivo de donde es la foto o quienes son.</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="landing-section-button">
+                        <button type="button" class="shadow btn btn-secondary btn-lg align-self-start">QUIERO AYUDAR!</button>
+                    </div>   
+                </div>                 
+            </div>
+            <div class="landing-quienes">
+                <div class='size-container'>
+                    <h1 class="section-header">QUIENES SOMOS</h1>                    
+                    <p class="fs-4">
+                        El REGNUM CHRISTI una realidad de la Iglesia Católica cuya misión es hacer presente el Reino de Cristo, 
+                        es decir que Cristo reine en nuestro corazón, 
+                        en el de los demás y en la sociedad. 
+                    </p>
+                    <p class="fs-4">
+                        UNIDOS POR ECUADOR es un plan para insertar este Reino en los corazones de muchos ecuatorianos mientras 
+                        se hace un trabajo integral en los sectores más vulnerables.
+                    </p>                
+                    <div class="landing-section-button">
+                        <button type="button" class="shadow btn btn-primary btn-lg align-self-start">CONOCER MÁS!</button>
+                    </div>     
+                </div>               
+            </div>
+            <div class="landing-form">
+                <div class="size-container">
+                    <form>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Nombres Completos</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email address</label>
+                        </div>
+                          
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--     
+        QUIENES 
+        SOMOS
+    -->
+    <div class="quienes">
+        <div class="landing-quienes">
+            <div class='size-container'>
+                <h1 class="section-header">QUIENES SOMOS</h1>                    
+                <p class="fs-4">
+                    El REGNUM CHRISTI una realidad de la Iglesia Católica cuya misión es hacer presente el Reino de Cristo, 
+                    es decir que Cristo reine en nuestro corazón, 
+                    en el de los demás y en la sociedad. 
+                </p>
+                <p class="fs-4">
+                    UNIDOS POR ECUADOR es un plan para insertar este Reino en los corazones de muchos ecuatorianos mientras 
+                    se hace un trabajo integral en los sectores más vulnerables.
+                </p>                
+                <div class="landing-section-button">
+                    <button type="button" class="shadow btn btn-primary btn-lg align-self-start">CONOCER MÁS!</button>
+                </div>     
+            </div>               
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
